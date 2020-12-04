@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Brief initiation to R software
 
 You can use the [editor on GitHub](https://github.com/SaviKoissi/Mathematical-Biology/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
