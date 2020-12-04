@@ -1,8 +1,6 @@
 ## Brief initiation to R software
 
-You can use the [editor on GitHub](https://github.com/SaviKoissi/Mathematical-Biology/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+R is a free software environment for statistical computing and graphics. It compiles and runs on a wide variety of UNIX platforms, Windows and MacOS. You can download R \here[https://cran.r-project.org/mirrors.html]
 
 ### Markdown
 
