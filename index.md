@@ -1,6 +1,6 @@
 ## Brief initiation to R software
 
-R is a free software environment for statistical computing and graphics. It compiles and runs on a wide variety of UNIX platforms, Windows and MacOS. You can download R \here[https://cran.r-project.org/mirrors.html]
+R is a free software environment for statistical computing and graphics. It compiles and runs on a wide variety of UNIX platforms, Windows and MacOS. You can download R [here](https://cran.r-project.org/mirrors.html)
 
 ### Markdown
 
