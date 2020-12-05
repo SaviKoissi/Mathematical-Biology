@@ -13,9 +13,7 @@ They are single number assigned to object. Let us create an object a with the va
 * When two objects are assigned the same name the last one erase the first. Therefore, while assigning an object, make sure that the denotation is not the same. 
 * R is a key sensitive software therefore an object denoted **H** is different from an object denoted **h**
 * You should avoid assigning objects to basic R functions like **TRUE/T**, **means**, **max**, **min**
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 ```{r cars, echo=T}
 >a<-3.5
 > class(a)
