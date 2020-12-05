@@ -12,15 +12,30 @@ R supports five type of objects including scalars, vectors, matrices, data frame
 They are single number assigned to object. Let us create an object a with the value 3.5. The assignment to the object to a name is particularly important when iterative computation are performed on the object. 
 * When two objects are assigned the same name the last one erase the first. Therefore, while assigning an object, make sure that the denotation is not the same. 
 * R is a key sensitive software therefore an object denoted **H** is different from an object denoted **h**
-* You should avoid assigning objects to basic R functions like **TRUE/T**, **means**, **max**, **min**
+* You should avoid assigning objects to basic R functions like **TRUE / T**, **means**, **max**, **min**
 
 ```{r cars, echo=T}
 >a<-3.5
 > class(a)
 [1] "numeric"
-
 ```
-
+**Exercise**
+1- Create 10 scalars in R
+2- Multiply the first object by the second
+3- Divide the result (2) by the four object
+4- Compute the sum of the object from the fifth to the 10 position
+5- Compute the sinus of the sum of the response 2, 3 and 4
+##### Logical / Boolean
+Four booleans are in R namely **TRUE** or **T**; **FALSE** or **F**; **NA**; **NaN**
+```{r cars, echo=T}
+>a<-3.5
+>b<-7
+>d<-a > b # a greater than b?
+> d
+[1] FALSE
+> class(d)
+[1] "logical"
+```
 
 
 ### Basic functions
