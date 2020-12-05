@@ -20,11 +20,11 @@ They are single number assigned to object. Let us create an object a with the va
 [1] "numeric"
 ```
 **Exercise**
-1- Create 10 scalars in R
-2- Multiply the first object by the second
-3- Divide the result (2) by the four object
-4- Compute the sum of the object from the fifth to the 10 position
-5- Compute the sinus of the sum of the response 2, 3 and 4
+1- Create 10 scalars in R\
+2- Multiply the first object by the second\
+3- Divide the result (2) by the four object\
+4- Compute the sum of the object from the fifth to the 10th position\
+5- Compute the sinus of the sum of the response 2, 3 and 4\
 ##### Logical / Boolean
 Four booleans are in R namely **TRUE** or **T**; **FALSE** or **F**; **NA**; **NaN**
 ```{r cars, echo=T}
