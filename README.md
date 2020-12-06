@@ -16,17 +16,17 @@ They are single number assigned to object. Let us create an object a with the va
 
 
 
-```{r setup, include=FALSE}
+{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-```
 
 
-```{r cars, echo=T}
+
+{r cars, echo=T}
 >a<-3.5
 > class(a)
 [1] "numeric"
 
-```
+
 ###### Exercise
 1- Create 10 scalars in R\
 2- Multiply the first object by the second\
@@ -37,7 +37,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ##### Logical / Boolean
 Four booleans are in R namely **TRUE** or **T**; **FALSE** or **F**; **NA**; **NaN**
 
-```{r cars, echo=T}
+{r cars, echo=T}
 >a<-3.5
 >b<-7
 >d<-a > b # a greater than b?
@@ -45,7 +45,7 @@ Four booleans are in R namely **TRUE** or **T**; **FALSE** or **F**; **NA**; **N
 [1] FALSE
 > class(d)
 [1] "logical"
-```
+
 
 
 ### Basic functions
