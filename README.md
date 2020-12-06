@@ -1,5 +1,5 @@
 # Mathematical-Biology
-Seminar Lecture/ Zef by Savi M.Koissi- Jan 2021
+Seminar Lecture/ Zef by [Savi M.Koissi] (https://www.zef.de/project-homepages/one-health/template-following/phd-researchers-projects/ghana/merveille-koissi-savi.html)- Jan 2021
 ## Brief initiation to R software
 
 R is a free software environment for statistical computing and graphics. It compiles and runs on a wide variety of UNIX platforms, Windows and MacOS. 
