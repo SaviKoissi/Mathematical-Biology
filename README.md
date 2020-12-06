@@ -24,7 +24,7 @@ R supports five type of objects including scalars, vectors, matrices, data frame
 They are single number assigned to object. Let us create an object a with the value 3.5. The assignment to the object to a name is particularly important when iterative computation are performed on the object. 
 * When two objects are assigned the same name the last one erase the first. Therefore, while assigning an object, make sure that the denotation is not the same. 
 * R is a key sensitive software therefore an object denoted **H** is different from an object denoted **h**
-* You should avoid assigning objects to basic R functions like **TRUE / T**, **means**, **max**, **min**
+* You should avoid assigning objects to basic R functions like **TRUE / T**, **mean**, **max**, **min**
 
 
 
@@ -48,7 +48,7 @@ knitr::opts_chunk$set(echo = TRUE)
 5- Compute the sinus of the sum of the response 2, 3 and 4; denote this object mt1
 
 ##### Logical / Boolean
-Four booleans are in R namely **TRUE** or **T**; **FALSE** or **F**; **NA**; **NaN**
+Two booleans are in R namely **TRUE** or **T**; **FALSE** or **F**. However, some characters could also be considered in this realm there are **NA**; **NaN**
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -241,4 +241,6 @@ Levels: red white
 
 
   
-### Basic functions
+### Built In 
+
+You have already see two built in namely **c()** and **matrix()**. However, you can encounter more than the aboved-mentionned 
