@@ -26,7 +26,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ```{r cars, echo=T}
-knitr::opts_chunk$set(echo = TRUE)
 >a<-3.5
 > class(a)
 [1] "numeric"
@@ -43,8 +42,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ##### Logical / Boolean
 Four booleans are in R namely **TRUE** or **T**; **FALSE** or **F**; **NA**; **NaN**
 
-```{r cars, echo=T}
+```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r cars, echo=T}
 >a<-3.5
 >b<-7
 >d<-a > b # a greater than b?
@@ -61,8 +63,11 @@ Compare mt4 and mt3
 
 In addition to the logical operation above presented; there is a possibility in R to do additional logical operations
 
-```{r cars, echo=T}
+```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r cars, echo=T}
 > a & b           # AND
 [1] FALSE
 > a | b           # OR
@@ -75,8 +80,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ##### Character / String
 Contrary to the scalr that are numerical object, the characters are the set of non numerical objects or numerical objects purposely transformed into non numerical objects. The nature of a numerical object can also be transformed if in the object there is a chain of characters. 
 
-```{r cars, echo=T}
+```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r cars, echo=T}
 > m <- "6"; n <- "7.5"       # Because of the "" the numerical object is transformed into a character 
 > m;n
 [1] "6"
@@ -94,8 +102,11 @@ Error in m + n : non-numeric argument to binary operator
 ##### Vector
 It represents a sequence of objects of the same nature encapsulated by the basic function of R **c()**. 
 
-```{r cars, echo=T}
+```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r cars, echo=T}
 > o <- c(1,2,5.3,6,-2,4)                             # Numeric vector
 > p <- c("one","two","three","four","five","six")    # Character vector
 > q <- c(TRUE,TRUE,FALSE,TRUE,FALSE,TRUE)            # Logical vector
