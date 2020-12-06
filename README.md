@@ -10,7 +10,7 @@ Once R and Rstudion is installed on your computer, the software is executed by l
 The prompt, by default **‘>’**, indicates that R is waiting for your commands. Under Windows using the program Rgui.exe, some commands (accessing the on-line help, opening files, . . .) can be executed via the pull-down menus. At this stage, a new user is likely to wonder “Whatdo I do now?” It is indeed very useful to have a few ideas on how R works when it is used for the first time, and this is what we will see now. We shall see first briefly how R works. Then, I will describe the “assign” operator which allows creating objects, how to manage objects in memory, and finally how to use the on-line help which is very useful when running R.
 ### Objects and classes in R
 R is an objects-oriented programming (OOP) language in another words the paradigm in where different methods are used to design software around data or objects rather than using functions. 
-#### Objects
+
 R supports five type of objects including scalars, vectors, matrices, data frames, and lists
 ##### Numeric or Scalar 
 They are single number assigned to object. Let us create an object a with the value 3.5. The assignment to the object to a name is particularly important when iterative computation are performed on the object. 
@@ -119,7 +119,116 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ##### Matrix
 
-A matrix contains a set of numerical elements arranged in a two-dimensional rectangular layout encapsulate by the function **matrix**.
+A matrix contains a set of numerical elements arranged in a two-dimensional rectangular layout encapsulate by the function **matrix()**.
+The basic syntax of **matrix()** for creating a matrix in R is the following 
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r cars, echo=T} 
+matrix(data, nrow, ncol, byrow, dimnames)
+```
+Here is the description of the **arguments** or parameters used:
+
+* **data** is the input vector which becomes the data elements of the matrix.
+
+* **nrow** is the number of rows to be created.
+
+* **ncol** is the number of columns to be created.
+
+* **byrow** is a logical clue. If TRUE then the input vector elements are arranged by row.
+
+* **dimname** is the names assigned to the rows and columns.
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r cars, echo=T} 
+
+> t <- matrix(
++     1:12,                 # the data components (Don't type "+"!)
++     nrow=4,               # number of rows
++     ncol=3,               # number of columns
++     byrow = FALSE)        # fill matrix by columns
+> t                         # print the matrix
+     [,1] [,2] [,3]
+[1,]    1    5    9
+[2,]    2    6   10
+[3,]    3    7   11
+[4,]    4    8   12
+
+```
+
+Similar to the vector the **operator []** could be used for a extraction of elements
+###### Exercise
+Set a seed in R. 
+1- Create a matrix m1 composed by 7 rows and 3 columns arranged by colunm
+2- Create a matrix m2 composed by  7 rows and 3 columns arranged by row
+3- Check if m1 is equal to m2
+4- Extract from m1 the element on the row 3 and column 3
+
+##### Data frame
+A data frame is a more matrix containing different nature of objects
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r cars, echo=T} 
+
+> d <- c(1,2,3,4)
+> e <- c("red", "white", "red", NA)
+> f <- c(TRUE,TRUE,TRUE,FALSE)
+> mydata <- data.frame(d,e,f)
+> names(mydata) <- c("ID","Color","Passed")      # variable names
+> mydata
+  ID Color Passed
+1  1   red   TRUE
+2  2 white   TRUE
+3  3   red   TRUE
+4  4  <NA>  FALSE
+```
+
+##### List
+A list is a vector containing different objects. 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r cars, echo=T} 
+
+> l <-list(vec=p, mat=t, fra=mydata, count=3)                   # a list with a vector, a matrix, a data frame defined earlier and a scalar
+> l
+$vec
+[1] "one"   "two"   "three" "four"  "five"  "six" 
+
+$mat
+     [,1] [,2] [,3]
+[1,]    1    5    9
+[2,]    2    6   10
+[3,]    3    7   11
+[4,]    4    8   12
+
+$fra
+  ID Color Passed
+1  1   red   TRUE
+2  2 white   TRUE
+3  3   red   TRUE
+4  4  <NA>  FALSE
+
+$count
+[1] 3
+> l$vec                                                         # extract components from list
+[1] "one"   "two"   "three" "four"  "five"  "six" 
+> l$mat[2,3]
+[1] 10
+> l$fra$Color
+[1] red   white red   <NA>
+Levels: red white
+```
 
 ### Basic functions
