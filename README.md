@@ -226,7 +226,8 @@ You have already see two built-in namely **c()** and **matrix()**. However, you 
 
 #### plot()
 
-This command helps to visualize data. To know the structuration of a built-in function, you can use **?** and the built-in \ e.g: ?plot
+This command helps to visualize data. To know the structuration of a built-in function, you can use **?** and the built-in\
+e.g: ?plot
 
 #### abs()
 
