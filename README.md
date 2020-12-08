@@ -157,10 +157,10 @@ Similar to the vector the **operator []** could be used for the extraction of el
 
 ###### Exercise
 
-Set a seed in R. 
-1- Create a matrix m1 composed of 7 rows and 3 columns arranged by column/
-2- Create a matrix m2 composed of 7 rows and 3 columns arranged by row/
-3- Check if m1 is equal to m2/
+Set a seed in R. \
+1- Create a matrix m1 composed of 7 rows and 3 columns arranged by column\
+2- Create a matrix m2 composed of 7 rows and 3 columns arranged by row\
+3- Check if m1 is equal to m2\
 4- Extract from m1 the element on row 3 and column 3
 
 ##### Data frame
