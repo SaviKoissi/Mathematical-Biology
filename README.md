@@ -5,6 +5,7 @@ This initiation is developed specifically in the framework of the lecture-semina
 
 
 ## Brief initiation to R software
+
 ## Installation of R 
 
   
@@ -22,7 +23,9 @@ The prompt, by default **‘>’**, indicates that R is waiting for your command
 R is an objects-oriented programming (OOP) language in another words the paradigm in where different methods are used to design software around data or objects rather than using functions. 
 
 R supports five type of objects including scalars, vectors, matrices, data frames, and lists
+
 ##### Numeric or Scalar 
+
 They are single number assigned to object. Let us create an object a with the value 3.5. The assignment to the object to a name is particularly important when iterative computation are performed on the object. 
 * When two objects are assigned the same name the last one erase the first. Therefore, while assigning an object, make sure that the denotation is not the same. 
 * R is a key sensitive software therefore an object denoted **H** is different from an object denoted **h**
@@ -44,6 +47,7 @@ They are single number assigned to object. Let us create an object a with the va
 5- Compute the sinus of the sum of the response 2, 3 and 4; denote this object mt1
 
 ##### Logical / Boolean
+
 Two booleans are in R namely **TRUE** or **T**; **FALSE** or **F**. However, some characters could also be considered in this realm there are **NA**; **NaN**
 
 ```{r}
@@ -55,7 +59,9 @@ Two booleans are in R namely **TRUE** or **T**; **FALSE** or **F**. However, som
 > class(d)
 [1] "logical"
 ```
+
 ###### Exercise
+
 Compare mt4 and mt3
 * check if mt4 and mt3 are equal
 * If mt4<mt3
@@ -74,6 +80,7 @@ In addition to the logical operation above presented; there is a possibility in 
 
 
 ##### Character / String
+
 Contrary to the scalr that are numerical object, the characters are the set of non numerical objects or numerical objects purposely transformed into non numerical objects. The nature of a numerical object can also be transformed if in the object there is a chain of characters. 
 
 
@@ -93,6 +100,7 @@ Error in m + n : non-numeric argument to binary operator
 ```
 
 ##### Vector
+
 It represents a sequence of objects of the same nature encapsulated by the basic function of R **c()**. 
 
 ```{r}
@@ -100,7 +108,9 @@ It represents a sequence of objects of the same nature encapsulated by the basic
 > p <- c("one","two","three","four","five","six")    # Character vector
 > q <- c(TRUE,TRUE,FALSE,TRUE,FALSE,TRUE)            # Logical vector
 ```
+
 ###### Exercise
+
 1- Create a vector of logic\
 2- Coerce the elemet mt5 into a character\
 3- Create a vector of 10 characters with the first element be mt5 denote this new object created mt\
@@ -114,6 +124,7 @@ The basic syntax of **matrix()** for creating a matrix in R is the following
 ```{r} 
 matrix(data, nrow, ncol, byrow, dimnames)
 ```
+
 Here is the description of the **arguments** or parameters used:
 
 * **data** is the input vector which becomes the data elements of the matrix.
@@ -126,8 +137,8 @@ Here is the description of the **arguments** or parameters used:
 
 * **dimname** is the names assigned to the rows and columns.
 
-```{r} 
 
+```{r} 
 > t <- matrix(
 +     1:12,                 # the data components (Don't type "+"!)
 +     nrow=4,               # number of rows
@@ -145,6 +156,7 @@ Here is the description of the **arguments** or parameters used:
 Similar to the vector the **operator []** could be used for a extraction of elements
 
 ###### Exercise
+
 Set a seed in R. 
 1- Create a matrix m1 composed by 7 rows and 3 columns arranged by colunm/
 2- Create a matrix m2 composed by  7 rows and 3 columns arranged by row/
@@ -152,6 +164,7 @@ Set a seed in R.
 4- Extract from m1 the element on the row 3 and column 3
 
 ##### Data frame
+
 A data frame is a more matrix containing different nature of objects
 
 ```{r} 
@@ -170,6 +183,7 @@ A data frame is a more matrix containing different nature of objects
 ```
 
 ##### List
+
 A list is a vector containing different objects. 
 
 ```{r} 
@@ -209,81 +223,121 @@ Levels: red white
 ### Built In 
 
 You have already see two built in namely **c()** and **matrix()**. However, you can encounter more than the aboved-mentionned 
+
 #### plot()
+
 This command help to visualize data. In order to know the structuration of a built-in function, you can use **?** and the buildt-in\ e.g: ?plot
+
 #### abs()
+
 Return the absolute value of a numerical object
+
 ```{r}
 >abs(-1)
 [1] 1
 ```
+
 #### sqrt()
+
 Return the square root of a numeric objects
+
 ```{r}
 >sqrt(c(2,4))
 [1] 1.414214  2
 ```
+
 #### seq()
+
 It is used to create a sequence of number
+
 ```{r}
 >seq(0,8,2)
 [1] 0 2 4 6 8
 ```
+
 #### rep()
+
 It is used to repeat numbers
+
 ```{r}
 rep(c(0,3),3)
 [1] 0 3 0 3 0 3
 ```
+
 #### length()
+
 To get the length of a vector
+
 ```{r}
 >length(c(1, 5, 6,  -2))
 [1] 4
 ```
+
 #### system.time()
+
 Measures the time to process a computation 
+
 ```{r}
 > system.time((seq1 = seq(0, 1e6, 1)))
     user  system  elapsed
     0.01  0.01    0.01
  ```
+ 
  #### mean()
+ 
  Compute the mean of a vector
+ 
  ```{r}
  > mean(c(0, 5, 1, -10, 6))
  [1] 0.4
  ```
+ 
  #### var()
  Compute the variance of a vector
+ 
  ```{r}
  >var(c(0, 5, 1, -10, 6))
   [1] 40.3
  ```
+ 
  #### median()
+ 
  Compute the median
+ 
  ```{r}
  >median(c(0, 5, 1, -10, 6))
  [1] 1
  ```
- #### sample()
+
+#### sample()
+ 
  To randomly sample with a probability 
- ```{r}
+
+```{r}
  >sample(c(0, 1), 10, replace = TRUE, prob = c(.5, .5)) # Sample 10 elements in the vector c(0,1) with equal probability to select the element of the vector
  [1] 1 1 1 1 1 0 0 0 1 1
  ```
+ 
  #### Distributions
+ 
  * **runif()** uniform distribution
+ 
  * **rnorm()** normal distribution
+ 
  #### Statistical tests
+ 
  * **t.test()** t test
+ 
  * **wilcox.test()** Wilcoxson test
+ 
  * **ln()** linear models
  
  ##### Exercise
+ 
  Cite 5 examples of built in not mentionned in this presentation and illustrate their use in R. 
  
  ## First programming skills
+ 
  ### Writting a function in R
  
  
