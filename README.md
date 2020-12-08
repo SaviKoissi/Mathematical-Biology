@@ -359,18 +359,5 @@ sum.of.squares <- function(x,y) {
 
 Write a function to determine the size of the population of a species using the strategy K (logistic growth). 
 
-```suggestion: -2+11
-	state = {
-		name: '',
-		email: '',
-		message: '',
-		gRecaptchaResponse: '', 
-		submitEnabled: false, 
-		successEnabled: false, 
-		formSubmitted: false, 
-	}; 
-```
- 
-
 
 
