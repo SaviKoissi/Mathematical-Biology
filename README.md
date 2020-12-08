@@ -13,7 +13,7 @@ R is a free software environment for statistical computing and graphics. It comp
 * And then R studio [here](https://rstudio.com/products/rstudio/download/)
 
 Once R and Rstudion is installed on your computer, the software is executed by launching the corresponding executable. 
-The prompt, by default **‘>’**, indicates that R is waiting for your commands. Under Windows using the program Rgui.exe, some commands (accessing the on-line help, opening files, . . .) can be executed via the pull-down menus. At this stage, a new user is likely to wonder “Whatdo I do now?” It is indeed very useful to have a few ideas on how R works when it is used for the first time, and this is what we will see now. We shall see first briefly how R works. Then, I will describe the “assign” operator which allows creating objects, how to manage objects in memory, and finally how to use the on-line help which is very useful when running R.
+The prompt, by default **‘>’**, indicates that R is waiting for your commands. Under Windows using the program Rgui.exe, some commands (accessing the on-line help, opening files, . . .) can be executed via the pull-down menus. At this stage, a new user is likely to wonder “Whatdo I do now?” It is indeed very useful to have a few ideas on how R works when it is used for the first time, and this is what we will see now. We shall see first the obejcts in R; the built in function and how to write a functionin R.
 
 
 ### Objects and classes in R
@@ -247,3 +247,18 @@ Levels: red white
 ### Built In 
 
 You have already see two built in namely **c()** and **matrix()**. However, you can encounter more than the aboved-mentionned 
+#### plot()
+This command help to visualize data. In order to know the structuration of a built-in function, you can use **?** and the buildt-in\ e.g: ?plot
+#### abs()
+Return the absolute value of a numerical object\
+```{r setup, include=FALSE}
+>abs(-1)
+[1] 1
+```
+#### sqrt()
+Return the square root of a numeric objects
+```{r setup, include=FALSE}
+>sqrt(4)
+[1] 2
+```
+
