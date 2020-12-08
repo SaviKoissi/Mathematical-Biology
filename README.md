@@ -1,5 +1,6 @@
 # Mathematical-Biology
 Seminar Lecture/ Zef by [Savi M.Koissi](https://www.zef.de/project-homepages/one-health/template-following/phd-researchers-projects/ghana/merveille-koissi-savi.html) - Jan 2021
+This initiation is developed specifically in the framework of the lecture-seminar organized by ZEF and do not enclose everything regarding programming in this environment.  
 
 
 ## Brief initiation to R software
