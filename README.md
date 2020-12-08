@@ -28,14 +28,7 @@ They are single number assigned to object. Let us create an object a with the va
 * R is a key sensitive software therefore an object denoted **H** is different from an object denoted **h**
 * You should avoid assigning objects to basic R functions like **TRUE / T**, **mean**, **max**, **min**, **t**. 
 
-
-
 ```{r}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-
-```{r, echo=T}
 >a<-3.5
 > class(a)
 [1] "numeric"
@@ -43,6 +36,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ###### Exercise
+
 1- Create 10 scalars in R\
 2- Multiply the first object by the second; denote this object mt4\
 3- Divide the result mt4 by the fourth object; denote this object mt3\
@@ -52,11 +46,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ##### Logical / Boolean
 Two booleans are in R namely **TRUE** or **T**; **FALSE** or **F**. However, some characters could also be considered in this realm there are **NA**; **NaN**
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-```{r cars, echo=T}
+```{r}
 >a<-3.5
 >b<-7
 >d<-a > b # a greater than b?
@@ -73,11 +63,7 @@ Compare mt4 and mt3
 
 In addition to the logical operation above presented; there is a possibility in R to do additional logical operations
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-```{r cars, echo=T}
+```{r}
 > a & b           # AND
 [1] FALSE
 > a | b           # OR
@@ -90,11 +76,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ##### Character / String
 Contrary to the scalr that are numerical object, the characters are the set of non numerical objects or numerical objects purposely transformed into non numerical objects. The nature of a numerical object can also be transformed if in the object there is a chain of characters. 
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
-```{r cars, echo=T}
+```{r}
 > m <- "6"; n <- "7.5"       # Because of the "" the numerical object is transformed into a character 
 > m;n
 [1] "6"
@@ -112,11 +95,7 @@ Error in m + n : non-numeric argument to binary operator
 ##### Vector
 It represents a sequence of objects of the same nature encapsulated by the basic function of R **c()**. 
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-```{r cars, echo=T}
+```{r}
 > o <- c(1,2,5.3,6,-2,4)                             # Numeric vector
 > p <- c("one","two","three","four","five","six")    # Character vector
 > q <- c(TRUE,TRUE,FALSE,TRUE,FALSE,TRUE)            # Logical vector
@@ -132,11 +111,7 @@ knitr::opts_chunk$set(echo = TRUE)
 A matrix contains a set of numerical elements arranged in a two-dimensional rectangular layout encapsulate by the function **matrix()**.
 The basic syntax of **matrix()** for creating a matrix in R is the following 
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-```{r cars, echo=T} 
+```{r} 
 matrix(data, nrow, ncol, byrow, dimnames)
 ```
 Here is the description of the **arguments** or parameters used:
@@ -151,12 +126,7 @@ Here is the description of the **arguments** or parameters used:
 
 * **dimname** is the names assigned to the rows and columns.
 
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-```{r cars, echo=T} 
+```{r} 
 
 > t <- matrix(
 +     1:12,                 # the data components (Don't type "+"!)
@@ -184,11 +154,7 @@ Set a seed in R.
 ##### Data frame
 A data frame is a more matrix containing different nature of objects
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-```{r cars, echo=T} 
+```{r} 
 
 > d <- c(1,2,3,4)
 > e <- c("red", "white", "red", NA)
@@ -206,13 +172,9 @@ knitr::opts_chunk$set(echo = TRUE)
 ##### List
 A list is a vector containing different objects. 
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+```{r} 
 
-```{r cars, echo=T} 
-
-> l <-list(vec=p, mat=t, fra=mydata, count=3)         # a list with a vector, a matrix, a data frame defined earlier and a scalar
+> l <-list(vec=p, mat=t, fra=mydata, count=3)  # a list with a vector, a matrix, a data frame defined earlier and a scalar
 > l
 $vec
 [1] "one"   "two"   "three" "four"  "five"  "six" 
@@ -233,7 +195,7 @@ $fra
 
 $count
 [1] 3
-> l$vec                                                         # extract components from list
+> l$vec        # extract components from list
 [1] "one"   "two"   "three" "four"  "five"  "six" 
 > l$mat[2,3]
 [1] 10
@@ -251,13 +213,13 @@ You have already see two built in namely **c()** and **matrix()**. However, you 
 This command help to visualize data. In order to know the structuration of a built-in function, you can use **?** and the buildt-in\ e.g: ?plot
 #### abs()
 Return the absolute value of a numerical object\
-```{r setup, include=FALSE}
+```{r}
 >abs(-1)
 [1] 1
 ```
 #### sqrt()
 Return the square root of a numeric objects
-```{r setup, include=FALSE}
+```{r}
 >sqrt(4)
 [1] 2
 ```
