@@ -35,7 +35,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-```{r cars, echo=T}
+```{r, echo=T}
 >a<-3.5
 > class(a)
 [1] "numeric"
