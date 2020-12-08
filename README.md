@@ -26,7 +26,7 @@ R supports five type of objects including scalars, vectors, matrices, data frame
 They are single number assigned to object. Let us create an object a with the value 3.5. The assignment to the object to a name is particularly important when iterative computation are performed on the object. 
 * When two objects are assigned the same name the last one erase the first. Therefore, while assigning an object, make sure that the denotation is not the same. 
 * R is a key sensitive software therefore an object denoted **H** is different from an object denoted **h**
-* You should avoid assigning objects to basic R functions like **TRUE / T**, **mean**, **max**, **min**
+* You should avoid assigning objects to basic R functions like **TRUE / T**, **mean**, **max**, **min**, **t**. 
 
 
 
@@ -173,6 +173,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 Similar to the vector the **operator []** could be used for a extraction of elements
+
 ###### Exercise
 Set a seed in R. 
 1- Create a matrix m1 composed by 7 rows and 3 columns arranged by colunm/
