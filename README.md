@@ -30,7 +30,7 @@ They are single number assigned to object. Let us create an object a with the va
 
 
 
-```{r setup, include=FALSE}
+```{r}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
