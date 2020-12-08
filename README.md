@@ -212,7 +212,7 @@ You have already see two built in namely **c()** and **matrix()**. However, you 
 #### plot()
 This command help to visualize data. In order to know the structuration of a built-in function, you can use **?** and the buildt-in\ e.g: ?plot
 #### abs()
-Return the absolute value of a numerical object\
+Return the absolute value of a numerical object
 ```{r}
 >abs(-1)
 [1] 1
@@ -220,9 +220,76 @@ Return the absolute value of a numerical object\
 #### sqrt()
 Return the square root of a numeric objects
 ```{r}
->sqrt(4)
-[1] 2
+>sqrt(c(2,4))
+[1] 1.414214  2
 ```
+#### seq()
+It is used to create a sequence of number
+```{r}
+>seq(0,8,2)
+[1] 0 2 4 6 8
+```
+#### rep()
+It is used to repeat numbers
+```{r}
+rep(c(0,3),3)
+[1] 0 3 0 3 0 3
+```
+#### length()
+To get the length of a vector
+```{r}
+>length(c(1, 5, 6,  -2))
+[1] 4
+```
+#### system.time()
+Measures the time to process a computation 
+```{r}
+> system.time((seq1 = seq(0, 1e6, 1)))
+    user  system  elapsed
+    0.01  0.01    0.01
+ ```
+ #### mean()
+ Compute the mean of a vector
+ ```{r}
+ > mean(c(0, 5, 1, -10, 6))
+ [1] 0.4
+ ```
+ #### var()
+ Compute the variance of a vector
+ ```{r}
+ >var(c(0, 5, 1, -10, 6))
+  [1] 40.3
+ ```
+ #### median()
+ Compute the median
+ ```{r}
+ >median(c(0, 5, 1, -10, 6))
+ [1] 1
+ ```
+ #### sample()
+ To randomly sample with a probability 
+ ```{r}
+ >sample(c(0, 1), 10, replace = TRUE, prob = c(.5, .5)) # Sample 10 elements in the vector c(0,1) with equal probability to select the element of the vector
+ [1] 1 1 1 1 1 0 0 0 1 1
+ ```
+ #### Distributions
+ * **runif()** uniform distribution
+ * **rnorm()** normal distribution
+ #### Statistical tests
+ * **t.test()** t test
+ * **wilcox.test()** Wilcoxson test
+ * **ln()** linear models
+ 
+ ##### Exercise
+ Cite 5 examples of built in not mentionned in this presentation and illustrate their use in R. 
+ 
+ ## First programming skills
+ ### Writting a function in R
+ 
+ 
+ 
+ 
+ 
 
 
 
