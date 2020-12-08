@@ -1,5 +1,6 @@
 # Mathematical-Biology
 Seminar Lecture/ Zef by [Savi M.Koissi](https://www.zef.de/project-homepages/one-health/template-following/phd-researchers-projects/ghana/merveille-koissi-savi.html) - Jan 2021
+
 This initiation is developed specifically in the framework of the lecture-seminar organized by ZEF and do not enclose everything regarding programming in this environment.  
 
 
@@ -44,7 +45,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ###### Exercise
 1- Create 10 scalars in R\
 2- Multiply the first object by the second; denote this object mt4\
-3- Divide the result (2) by the four object; denote this object mt3\
+3- Divide the result mt4 by the fourth object; denote this object mt3\
 4- Compute the sum of the object from the fifth to the 10th position; denote this object mt2\
 5- Compute the sinus of the sum of the response 2, 3 and 4; denote this object mt1
 
@@ -121,9 +122,9 @@ knitr::opts_chunk$set(echo = TRUE)
 > q <- c(TRUE,TRUE,FALSE,TRUE,FALSE,TRUE)            # Logical vector
 ```
 ###### Exercise
-1- Create a vector of logic
-2- Coerce the elemet mt5 into a character
-3- Create a vector of 10 characters with the first element be mt5 denote this new object created mt
+1- Create a vector of logic\
+2- Coerce the elemet mt5 into a character\
+3- Create a vector of 10 characters with the first element be mt5 denote this new object created mt\
 4- Extract the second element of the object mt
 
 ##### Matrix
@@ -174,9 +175,9 @@ knitr::opts_chunk$set(echo = TRUE)
 Similar to the vector the **operator []** could be used for a extraction of elements
 ###### Exercise
 Set a seed in R. 
-1- Create a matrix m1 composed by 7 rows and 3 columns arranged by colunm
-2- Create a matrix m2 composed by  7 rows and 3 columns arranged by row
-3- Check if m1 is equal to m2
+1- Create a matrix m1 composed by 7 rows and 3 columns arranged by colunm/
+2- Create a matrix m2 composed by  7 rows and 3 columns arranged by row/
+3- Check if m1 is equal to m2/
 4- Extract from m1 the element on the row 3 and column 3
 
 ##### Data frame
@@ -210,7 +211,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r cars, echo=T} 
 
-> l <-list(vec=p, mat=t, fra=mydata, count=3)                   # a list with a vector, a matrix, a data frame defined earlier and a scalar
+> l <-list(vec=p, mat=t, fra=mydata, count=3)         # a list with a vector, a matrix, a data frame defined earlier and a scalar
 > l
 $vec
 [1] "one"   "two"   "three" "four"  "five"  "six" 
