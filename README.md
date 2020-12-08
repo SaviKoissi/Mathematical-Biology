@@ -283,62 +283,63 @@ Measures the time to process a computation
     0.01  0.01    0.01
  ```
  
- #### mean()
+#### mean()
  
- Compute the mean of a vector
+Compute the mean of a vector
  
- ```{r}
- > mean(c(0, 5, 1, -10, 6))
- [1] 0.4
- ```
+```{r}
+> mean(c(0, 5, 1, -10, 6))
+[1] 0.4
+```
  
- #### var()
- Compute the variance of a vector
+#### var()
  
- ```{r}
+Compute the variance of a vector
+ 
+```{r}
  >var(c(0, 5, 1, -10, 6))
   [1] 40.3
- ```
+```
  
- #### median()
+#### median()
  
- Compute the median
+Compute the median
  
- ```{r}
- >median(c(0, 5, 1, -10, 6))
- [1] 1
- ```
+```{r}
+>median(c(0, 5, 1, -10, 6))
+[1] 1
+```
 
 #### sample()
  
- To randomly sample with a probability 
+To randomly sample with a probability 
 
 ```{r}
- >sample(c(0, 1), 10, replace = TRUE, prob = c(.5, .5)) # Sample 10 elements in the vector c(0,1) with equal probability to select the element of the vector
- [1] 1 1 1 1 1 0 0 0 1 1
- ```
+>sample(c(0, 1), 10, replace = TRUE, prob = c(.5, .5)) # Sample 10 elements in the vector c(0,1) with equal probability to select the element of the vector
+[1] 1 1 1 1 1 0 0 0 1 1
+```
  
- #### Distributions
+#### Distributions
  
- * **runif()** uniform distribution
+* **runif()** uniform distribution
  
- * **rnorm()** normal distribution
+* **rnorm()** normal distribution
  
- #### Statistical tests
+#### Statistical tests
  
- * **t.test()** t test
+* **t.test()** t test
  
- * **wilcox.test()** Wilcoxson test
+* **wilcox.test()** Wilcoxson test
  
- * **ln()** linear models
+* **ln()** linear models
  
- ##### Exercise
+##### Exercise
  
- Cite 5 examples of built in not mentionned in this presentation and illustrate their use in R. 
+Cite 5 examples of built in not mentionned in this presentation and illustrate their use in R. 
  
- ## First programming skills
+## First programming skills
  
- ### Writting a function in R
+### Writting a function in R
  
  
  
