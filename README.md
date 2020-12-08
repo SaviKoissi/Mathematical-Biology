@@ -340,10 +340,36 @@ Cite 5 examples of built-in not mentioned in this presentation and illustrate th
 ## First programming skills
  
 ### Writing a function in R
- 
- 
- 
- 
+
+A function is written to incorporate sets of instructions that you want to use repeatedly or that, because of their complexity, are better self-contained in a sub program and called when needed. A function is a piece of code written to carry out a specified task; it can or can not accept arguments or parameters and it can or can not return one or more values.\
+In R, a function si contsrtucted this way: 
+
+```{r}
+function (arglist)  {body}
+```
+
+Let's write a function computing the sum of square of 2 variables
+
+```{r}
+sum.of.squares <- function(x,y) {
+  x^2 + y^2
+}
+```
+#### Exercise 
+
+Write a function to determine the size of the population of a species using the strategy K (logistic growth). 
+
+```suggestion: -2+11
+	state = {
+		name: '',
+		email: '',
+		message: '',
+		gRecaptchaResponse: '', 
+		submitEnabled: false, 
+		successEnabled: false, 
+		formSubmitted: false, 
+	}; 
+```
  
 
 
