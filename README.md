@@ -3,7 +3,6 @@ Seminar Lecture/ Zef by [Savi M.Koissi](https://scholar.google.com/citations?use
 
 This initiation is developed specifically in the framework of the lecture-seminar organized by ZEF and does not enclose everything regarding programming in this environment.  
 
-
 ## Brief initiation to R software
 
 ## Installation of R 
