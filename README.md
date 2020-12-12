@@ -186,8 +186,10 @@ A data frame is a more matrix containing different nature of objects
 A list is a vector containing different objects. 
 
 ```{r} 
-
-> l <-list(vec=p, mat=t, fra=mydata, count=3)  # a list with a vector, a matrix, a data frame defined earlier and a scalar
+>p<-c("one",  "two", "three", "four", "five", "six") 
+>tr<-matrix(c(1:12),4,3, byrow=F)
+>mydata<-data.frame("ID"=c(1:4), "Color"=c("red", "white", "red", NA), "Passed"=c(TRUE, TRUE, TRUE, FALSE))
+> l <-list(vec=p, mat=tr, fra=mydata, count=3)  # a list with a vector, a matrix, a data frame defined earlier and a scalar
 > l
 $vec
 [1] "one"   "two"   "three" "four"  "five"  "six" 
@@ -323,7 +325,9 @@ To randomly sample with a probability
  
 * **runif()** uniform distribution
  
-* **rnorm()** normal distribution
+* **rnorm()** normal distribution 
+
+When in for a simulation study there is a need to use a given distribution, it is advised to set seed to have the same output of the simulation in another computer with the same version of R software. Therefore you will use the function **set.seed()**
  
 #### Statistical tests
  
