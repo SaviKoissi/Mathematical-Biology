@@ -327,7 +327,7 @@ To randomly sample with a probability
  
 * **rnorm()** normal distribution 
 
-When in for a simulation study there is a need to use a given distribution, it is advised to set seed to have the same output of the simulation in another computer with the same version of R software. Therefore you will use the function **set.seed()**
+When in for a simulation study there is a need to use a given distribution, it is advised to set seed to have the same output of the simulation in another computer with the same version of R software. Therefore, you will use the function **set.seed()**
  
 #### Statistical tests
  
