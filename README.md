@@ -12,16 +12,16 @@ R is a free software environment for statistical computing and graphics. It comp
 * You can download R [here](https://cran.r-project.org/bin/windows/base/). 
 * And then R studio [here](https://rstudio.com/products/rstudio/download/)
 
-Once R and Rstudion are installed on your computer, the software is executed by launching the corresponding executable. 
+Once R and Rstudio are installed on your computer, the software is executed by launching the corresponding executable. 
 The prompt, by default **‘>’**, indicates that R is waiting for your commands. Under Windows using the program Rgui.exe, some commands (accessing the on-line help, opening files, . . .) can be executed via the pull-down menus. At this stage, a new user is likely to wonder “What do I do now?” It is indeed very useful to have a few ideas on how R works when it is used for the first time, and this is what we will see now. We shall see first the objects in R; the built-in function and how to write a function in R.
 
 
 ### Objects and classes in R
 
 
-R is an object-oriented programming (OOP) language in other words the paradigm in where different methods are used to design software around data or objects rather than using functions. 
+R is an object-oriented programming (OOP) language in other words the paradigm where different methods are used to design software around data or objects rather than using functions. 
 
-R supports five types of objects including scalars, vectors, matrices, data frames, and lists
+R supports five types of objects including: 
 
 ##### Numeric or Scalar 
 
@@ -112,7 +112,7 @@ It represents a sequence of objects of the same nature encapsulated by the basic
 
 1- Create a vector of logic\
 2- Coerce the element mt5 into a character\
-3- Create a vector of 10 characters with the first element be mt5 denote this new object created mt\
+3- Create a vector of 10 characters with the first element as mt5, denote this new object created mt\
 4- Extract the second element of the object mt
 
 ##### Matrix
@@ -164,7 +164,7 @@ Set a seed in R. \
 
 ##### Data frame
 
-A data frame is a more matrix containing different nature of objects
+A data frame is a matrix containing different types of objects
 
 ```{r} 
 
@@ -221,9 +221,9 @@ Levels: red white
 
 
   
-### Built In 
+### Built-in 
 
-You have already see two built-in namely **c()** and **matrix()**. However, you can encounter more than the above-mentioned 
+You have already seen two built-in namely **c()** and **matrix()**. However, you can encounter more than the ones mentioned above 
 
 #### plot()
 
@@ -241,7 +241,7 @@ Return the absolute value of a numerical object
 
 #### sqrt()
 
-Return the square root of a numeric objects
+Return the square root of a numerical object
 
 ```{r}
 >sqrt(c(2,4))
@@ -250,7 +250,7 @@ Return the square root of a numeric objects
 
 #### seq()
 
-It is used to create a sequence of number
+It is used to create a sequence of numbers
 
 ```{r}
 >seq(0,8,2)
@@ -327,13 +327,13 @@ To randomly sample with a probability
  
 * **rnorm()** normal distribution 
 
-When in for a simulation study there is a need to use a given distribution, it is advised to set seed to have the same output of the simulation in another computer with the same version of R software. Therefore, you will use the function **set.seed()**
+If for a simulation study there is a need to use a given distribution, it is advised to set seed to have the same output of the simulation in another computer with the same version of R software. Therefore, you will use the function **set.seed()**
  
 #### Statistical tests
  
 * **t.test()** t test
  
-* **wilcox.test()** Wilcoxson test
+* **wilcox.test()** Wilcoxon test
  
 * **ln()** linear models
  
@@ -346,7 +346,7 @@ Cite 5 examples of built-in not mentioned in this presentation and illustrate th
 ### Writing a function in R
 
 A function is written to incorporate sets of instructions that you want to use repeatedly or that, because of their complexity, are better self-contained in a sub program and called when needed. A function is a piece of code written to carry out a specified task; it can or can not accept arguments or parameters and it can or can not return one or more values.\
-In R, a function si contsrtucted this way: 
+In R, a function is contsrtucted this way: 
 
 ```{r}
 function (arglist)  {body}
@@ -361,7 +361,7 @@ sum.of.squares <- function(x,y) {
 ```
 #### Exercise 
 
-Write a function to determine the size of the population of a species using the strategy K (logistic growth). 
+Write a function to determine the size of the population of a K-selected species (logistic growth). 
 
 
 
