@@ -262,7 +262,7 @@ It is used to create a sequence of numbers
 It is used to repeat numbers
 
 ```{r}
-rep(c(0,3),3)
+>rep(c(0,3),3)
 [1] 0 3 0 3 0 3
 ```
 
@@ -349,15 +349,15 @@ A function is written to incorporate sets of instructions that you want to use r
 In R, a function is contsrtucted this way: 
 
 ```{r}
-function (arglist)  {body}
+>function (arglist)  {body}
 ```
 
 Let's write a function computing the sum of square of 2 variables
 
 ```{r}
-sum.of.squares <- function(x,y) {
-  x^2 + y^2
-}
+>sum.of.squares <- function(x,y) {
++  x^2 + y^2
++}
 ```
 #### Exercise 
 
