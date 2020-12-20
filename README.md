@@ -111,8 +111,8 @@ It represents a sequence of objects of the same nature encapsulated by the basic
 ###### Exercise
 
 1- Create a vector of logic\
-2- Coerce the element mt5 into a character\
-3- Create a vector of 10 characters with the first element as mt5, denote this new object created mt\
+2- Coerce the element mt1 into a character\
+3- Create a vector of 10 characters with the first element as mt1, denote this new object created mt\
 4- Extract the second element of the object mt
 
 ##### Matrix
