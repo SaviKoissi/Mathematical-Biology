@@ -335,7 +335,7 @@ If for a simulation study there is a need to use a given distribution, it is adv
  
 * **wilcox.test()** Wilcoxon test
  
-* **ln()** linear models
+* **ln()** linear model
  
 ##### Exercise
  
